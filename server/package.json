@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for Manu-Chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Manuel N. Aceituno",
+  "license": "ISC"
+}
