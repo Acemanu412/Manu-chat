@@ -1,5 +1,5 @@
 module.exports = `
     type Query {
-        messages: [Messages!]
+        messages: [Message!]
     }
 `
