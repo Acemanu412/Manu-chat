@@ -2,16 +2,20 @@ const  { GraphQLServer } = require('graphql-yoga');
 
 const messageTypeDef = require('./modules/message/typedef');
 const queryTypeDef = require('./modules/query/typedef');
+const mutationTypeDef = require('./modules/mutation/typedef');
 
 const queryResolvers = require('./modules/query/resolver');
+const mutationResolvers = require('./modules/mutation/resolver');
 
 const typeDefs = `
     ${messageTypeDef}
 
     ${queryTypeDef}
+
+    ${mutationTypeDef}
 `
 
-const resolvers = {...queryResolvers};
+const resolvers = {...queryResolvers, ...mutationResolvers};
 
 const server = new GraphQLServer({typeDefs, resolvers});
 
