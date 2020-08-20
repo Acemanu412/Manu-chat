@@ -1,3 +1,44 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+.message {
+  display: flex;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.message.mine{
+  justify-content: flex-end;
+}
+
+.message.notMine{
+  justify-content: flex-start;
+}
+
+.messageContent{
+  max-width: 50%;
+  padding: 1em;
+  border-radius: 1em;
+}
+.messageContent.mine {
+  background: #6D454C;
+  color: #D7FFAB
+}
+
+.messageContent.notMine {
+  background: #96ADC8;
+  color: #0D1B1E;
+}
+
+.userInitials {
+  height: 50;
+  width: 50;
+  border: solid 3px #8B635C;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 18;
+  padding-top:7px;
+  margin-left: 1em;
+  margin-right: 1em;
+}

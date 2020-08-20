@@ -7,6 +7,6 @@ import "./index.css";
 
 import Chat from "./Components/Chat"
 
-const App = () => <div>Project working <Chat /></div>;
+const App = () => <div><Chat /></div>;
 
 ReactDOM.render(<App />, document.getElementById("app"));

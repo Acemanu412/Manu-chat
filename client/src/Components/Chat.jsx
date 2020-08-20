@@ -1,6 +1,7 @@
 import React from "react";
 import 'cross-fetch/polyfill';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import {Container} from 'shards-react';
 
 import MessagesComponent from './main/Messages';
 
@@ -11,10 +12,10 @@ const client = new ApolloClient({
 
 const Chat = () => {
   return <ApolloProvider client={client}>
-    <div>
+    <Container>
       <h1>CHAT</h1>
-      <MessagesComponent user={'Manu'} />
-      </div>
+      <MessagesComponent user={'manu'} />
+      </Container>
   </ApolloProvider>
 }
 export default Chat;
