@@ -1,4 +1,5 @@
 import React from "react";
+import 'cross-fetch/polyfill';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 
