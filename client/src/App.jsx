@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 import "./index.css";
 
-const App = () => <div>Project working</div>;
+import Chat from "./Components/Chat"
+
+const App = () => <div>Project working <Chat /></div>;
 
 ReactDOM.render(<App />, document.getElementById("app"));
