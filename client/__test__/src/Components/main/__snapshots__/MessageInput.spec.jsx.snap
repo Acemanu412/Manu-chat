@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageInput component should render 1`] = `"<div class=\\"input\\"><form class=\\"form-inline\\"><input placeholder=\\"Write your message!\\" label=\\"Message\\" class=\\"messageForm form-control\\" value=\\"\\"><input placeholder=\\"Name\\" label=\\"User\\" class=\\"userForm form-control\\" value=\\"Manu\\"><button type=\\"submit\\" class=\\"btn btn-primary\\">Send</button></form></div>"`;

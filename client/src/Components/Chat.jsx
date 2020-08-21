@@ -4,6 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import {Container} from 'shards-react';
 
 import MessagesComponent from './main/Messages';
+import MessageInput from './main/MessageInput';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/',
@@ -11,13 +12,14 @@ const client = new ApolloClient({
 });
 
 const Chat = () => {
-  const [user, userSet] = useState('manu');
+  const [user, setUser] = useState('');
 
   return <ApolloProvider client={client}>
-    <Container>
+    <Container className='chatContainer'>
       <h1>CHAT</h1>
       <MessagesComponent user={user} />
-      </Container>
+      <MessageInput user={user} setUser={setUser} />
+    </Container>
   </ApolloProvider>
 }
 export default Chat;

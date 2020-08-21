@@ -2,10 +2,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+.container{
+  min-height: 90vh;
+  display:flex;
+  flex-flow: column;
+}
+
+.input{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
 .message {
   display: flex;
   border-radius: 1em;
   margin: 1em;
+}
+
+.messageForm{
+  flex-grow:10;
 }
 
 .message.mine{
@@ -31,7 +49,7 @@ body {
   color: #0D1B1E;
 }
 
-.userInitials {
+.userLetters {
   height: 50;
   width: 50;
   border: solid 3px #8B635C;
@@ -41,4 +59,8 @@ body {
   padding-top:7px;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.userForm{
+  flex-grow: 1;
 }

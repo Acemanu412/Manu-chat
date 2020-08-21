@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat component should render 1`] = `"<div class=\\"chatContainer container\\"><h1>CHAT</h1><div class=\\"alert alert-info fade\\" role=\\"alert\\">Loading...</div><div class=\\"input\\"><form class=\\"form-inline\\"><input placeholder=\\"Write your message!\\" label=\\"Message\\" value=\\"\\" class=\\"messageForm form-control\\"/><input placeholder=\\"Name\\" label=\\"User\\" value=\\"\\" class=\\"userForm form-control\\"/><button type=\\"submit\\" class=\\"btn btn-primary\\">Send</button></form></div></div>"`;

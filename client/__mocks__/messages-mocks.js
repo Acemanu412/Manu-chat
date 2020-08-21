@@ -1,4 +1,5 @@
 import { GET_MESSAGES } from '../src/Queries/messages';
+import { POST_MESSAGE } from '../src/Mutations/messages';
 
 export default [{
     request: {
@@ -8,9 +9,16 @@ export default [{
         data: {
             messages: [{
                   id: "0",
-                  user: "manu",
+                  user: "Manu",
                   content: "Test 1"
                 }],
             },
     }
+},
+{
+    request: {
+        query: POST_MESSAGE,
+        variables: {user: "Manu", content: ""}
+    },
+    result:  {},
 }];
