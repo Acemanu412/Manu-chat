@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "jest": {
-      "setupFilesAfterEnv": ["./setupTests.js"]
-    },
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
+  },
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
@@ -29,6 +31,7 @@
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.4.1",
     "jest-environment-enzyme": "^7.1.2",
+    "regenerator-runtime": "^0.13.7",
     "style-loader": "^1.2.1",
     "webpack": "^5.0.0-beta.22",
     "webpack-cli": "^3.3.12",

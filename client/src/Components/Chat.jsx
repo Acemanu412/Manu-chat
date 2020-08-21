@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import 'cross-fetch/polyfill';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import {Container} from 'shards-react';
@@ -11,10 +11,12 @@ const client = new ApolloClient({
 });
 
 const Chat = () => {
+  const [user, userSet] = useState('manu');
+
   return <ApolloProvider client={client}>
     <Container>
       <h1>CHAT</h1>
-      <MessagesComponent user={'manu'} />
+      <MessagesComponent user={user} />
       </Container>
   </ApolloProvider>
 }
