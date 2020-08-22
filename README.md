@@ -49,7 +49,6 @@ I wanted to test some of the libraries included in the project and, also, the id
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [React](https://reactjs.org/)
 * [Apollo server](https://www.apollographql.com/docs/apollo-server/)
-* [Laravel](https://laravel.com)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -114,6 +113,7 @@ Manuel N. Aceituno - [linkedIn](https://www.linkedin.com/in/manuel-aceituno/) - 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [GitHub Pages](https://github.com/jherr)
+* [GitHub Pages](https://github.com/othneildrew/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
