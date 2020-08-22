@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import 'cross-fetch/polyfill';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { WebSocketLink } from '@apollo/client/link/ws';
 import {Container} from 'shards-react';
 
 import MessagesComponent from './main/Messages';
 import MessageInput from './main/MessageInput';
 
+const serverPort = 4000;
+const linkToServer = new WebSocketLink({
+  uri: `ws://localhost:${serverPort}/`,
+  options: {
+    reconnect: true,
+  }
+});
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/',
+  link: linkToServer,
+  uri: `http://localhost:${serverPort}/`,
   cache: new InMemoryCache()
 });
+
 
 const Chat = () => {
   const [user, setUser] = useState('');

@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Manuel N. Aceituno",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -42,6 +42,7 @@
     "graphql": "^15.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "shards-react": "^1.0.3"
+    "shards-react": "^1.0.3",
+    "subscriptions-transport-ws": "^0.9.18"
   }
 }

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Alert } from 'shards-react';
 import { GET_MESSAGES } from '../../Queries/messages';
-import {  useQuery } from '@apollo/client';
+import {  useSubscription } from '@apollo/client';
 
 const Messages = ({ user }) => {
-    const { loading, error, data } = useQuery(GET_MESSAGES, { pollInterval: 500})
+    const { loading, error, data } = useSubscription(GET_MESSAGES)
 
     if (loading) return <Alert theme='info'>Loading...</Alert>;
     if (error) return <Alert theme='danger'>Error!</Alert>;
