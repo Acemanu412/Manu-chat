@@ -112,8 +112,8 @@ Manuel N. Aceituno - [linkedIn](https://www.linkedin.com/in/manuel-aceituno/) - 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Pages](https://github.com/jherr)
-* [GitHub Pages](https://github.com/othneildrew/)
+* [Jack Herrington - Great educator ](https://github.com/jherr)
+* [Othneil Drew - Great readme template](https://github.com/othneildrew/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
