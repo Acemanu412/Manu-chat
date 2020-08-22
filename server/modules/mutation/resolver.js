@@ -1,4 +1,5 @@
 const messages = require('../../config/messages');
+const subscribers = require('../../config/subscribers');
 
 module.exports = {
     Mutation: {
@@ -9,6 +10,7 @@ module.exports = {
                 user,
                 content
             });
+            subscribers.map((f) => f());
             return id;
         }
     }
